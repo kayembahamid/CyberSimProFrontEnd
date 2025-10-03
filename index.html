@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersim Pro | Professional Cybersecurity Training Platform</title>
+    <link rel="stylesheet" href="assets/css/style.css?v=20251001">
+    <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+    <style>
+        /* Inline style reserved for tiny overrides only. Main styles moved to assets/css/style.css */
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo"><img src="assets/img/icon.svg" alt="Cybersim icon" class="brand-mark"> <span>CYBERSIM PRO</span></div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-label="Toggle navigation" data-nav-toggle>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" data-nav-menu>
+                <ul class="nav-links">
+                    <li><a href="#platform" data-nav-link>Product</a></li>
+                    <li><a href="#workflows" data-nav-link>Workflows</a></li>
+                    <li><a href="#learn" data-nav-link>Resources</a></li>
+                    <li><a href="#governance" data-nav-link>Governance</a></li>
+                    <li><a href="#pricing" data-nav-link>Pricing</a></li>
+                    <li><a href="https://github.com/kayembahamid/cybersim-pro#readme" target="_blank" rel="noopener" data-nav-link>Docs</a></li>
+                </ul>
+                <div class="nav-right">
+                    <a href="https://app.cybersimpro.com/login" class="login-btn" target="_blank" rel="noopener" data-nav-link>👤 Login</a>
+                    <a href="#contact" class="demo-btn" data-nav-link>Book a Demo</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="platform">
+        <div class="flow-diagram">
+            <div class="center-icon"><img src="assets/img/image1.png" alt="Platform preview" class="hero-center-img"></div>
+            <!-- Curved SVG flow lines -->
+            <svg class="flow-svg" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+                <defs>
+                    <linearGradient id="flowGrad" x1="0" y1="0" x2="1000" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#ff5733" stop-opacity="0.55"/>
+                        <stop offset="48%" stop-color="#ff5733" stop-opacity="0.55"/>
+                        <stop offset="52%" stop-color="#10b981" stop-opacity="0.6"/>
+                        <stop offset="100%" stop-color="#10b981" stop-opacity="0.6"/>
+                    </linearGradient>
+                </defs>
+                <path d="M 0 90 C 280 90, 440 200, 500 200 S 720 200, 1000 120" stroke="url(#flowGrad)" stroke-width="2.5" fill="none"/>
+                <path d="M 0 150 C 260 150, 440 200, 500 200 S 730 200, 1000 180" stroke="url(#flowGrad)" stroke-width="2.5" fill="none"/>
+                <path d="M 0 230 C 260 230, 440 200, 500 200 S 730 200, 1000 240" stroke="url(#flowGrad)" stroke-width="2.5" fill="none"/>
+                <path d="M 0 310 C 280 310, 440 200, 500 200 S 720 200, 1000 300" stroke="url(#flowGrad)" stroke-width="2.5" fill="none"/>
+            </svg>
+
+            <!-- Packets that bend and pass behind the center -->
+            <div class="packet packet-a" style="--path: path('M 0 90 C 280 90, 440 200, 500 200 S 720 200, 1000 120'); --delay: 0s; --dur: 6s;"></div>
+            <div class="packet packet-a" style="--path: path('M 0 90 C 280 90, 440 200, 500 200 S 720 200, 1000 120'); --delay: 2.5s; --dur: 6.2s;"></div>
+            <div class="packet packet-b" style="--path: path('M 0 150 C 260 150, 440 200, 500 200 S 730 200, 1000 180'); --delay: .6s; --dur: 7s;"></div>
+            <div class="packet packet-b" style="--path: path('M 0 150 C 260 150, 440 200, 500 200 S 730 200, 1000 180'); --delay: 3s; --dur: 7.1s;"></div>
+            <div class="packet packet-c" style="--path: path('M 0 230 C 260 230, 440 200, 500 200 S 730 200, 1000 240'); --delay: 1.2s; --dur: 6.5s;"></div>
+            <div class="packet packet-d" style="--path: path('M 0 310 C 280 310, 440 200, 500 200 S 720 200, 1000 300'); --delay: 1.8s; --dur: 7.5s;"></div>
+
+            <!-- Pills (labels) on both sides -->
+            <div class="pill pill-left" style="--x: 18%; --y: 8%;">⚠ 40 Leaked Secrets</div>
+            <div class="pill pill-left" style="--x: 22%; --y: 28%;">⚠ 291 CVEs</div>
+            <div class="pill pill-left" style="--x: 16%; --y: 73%;">⚠ 385 Repos Discovered</div>
+            <div class="pill pill-right" style="--x: 70%; --y: 23%;">✓ tensorflow 2.8.1</div>
+            <div class="pill pill-right" style="--x: 70%; --y: 62%;">△ tensorflow 2.8.0</div>
+            
+            <div class="flow-node" style="left: 12%; top: 18%; animation-delay: 0.2s;">
+                <span class="alert-icon">⚠</span>
+                <span>40 Leaked Secrets</span>
+            </div>
+            
+            <div class="flow-node" style="left: 18%; top: 42%; animation-delay: 0.4s;">
+                <span class="alert-icon">⚠</span>
+                <span>291 CVEs</span>
+            </div>
+            
+            <div class="flow-node" style="left: 8%; top: 68%; animation-delay: 0.6s;">
+                <span class="alert-icon">⚠</span>
+                <span>385 Repos Discovered</span>
+            </div>
+            
+            <div class="flow-node" style="right: 12%; top: 22%; animation-delay: 0.8s;">
+                <span class="success-icon">✓</span>
+                <span>tensorflow 2.8.1</span>
+            </div>
+            
+            <div class="flow-node" style="right: 18%; top: 55%; animation-delay: 1s;">
+                <span style="color: #6b7280;">△</span>
+                <span>tensorflow 2.8.0</span>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Secure <span class="highlight">everything</span> your code depends on</h1>
+            <p class="hero-tagline">Expose, prioritize, and fix supply-chain risk without slowing your security teams.</p>
+            <div class="hero-cta hero-cta--buttons">
+                <a class="primary-btn" href="#contact">Book a Demo</a>
+                <a class="secondary-link" href="#pricing">View pricing</a>
+            </div>
+            <p class="hero-substatus" data-health>Status: checking CyberSim Pro API…</p>
+            <div class="hero-feedback" data-feedback aria-live="polite"></div>
+        </div>
+    </section>
+
+    <!-- Buyer clarity cards -->
+    <section class="value-props" id="workflows-overview" aria-label="Executive outcomes">
+        <div class="value-props__grid">
+            <article class="value-card">
+                <h2>Risk Coverage</h2>
+                <p>Simulate, monitor, and respond in one MCP-native panel.</p>
+            </article>
+            <article class="value-card">
+                <h2>Governance &amp; Compliance</h2>
+                <p>Dual-control, SCIM, sealed audit bundles.</p>
+            </article>
+            <article class="value-card">
+                <h2>Operational Speed</h2>
+                <p>Launch scenarios in &lt;15 minutes, export controls to GRC tools.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Customer Logos -->
+    <section class="logos-section">
+        <div class="logos-title">Trusted by Leading Security Teams</div>
+        <div class="logos-grid">
+            <div class="logo-item">SecureBank</div>
+            <div class="logo-item">CloudForce</div>
+            <div class="logo-item">DataShield</div>
+            <div class="logo-item">NetGuard</div>
+            <div class="logo-item">CyberDefense</div>
+            <div class="logo-item">InfoSec Inc</div>
+            <div class="logo-item">TechCorp</div>
+            <div class="logo-item">SafeSystems</div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <div class="stats-banner" aria-label="Customers see results">
+        <div class="stats-content">
+            <span class="stats-heading">Customers see</span>
+            <ul class="stats-metrics">
+                <li>80% less manual prep</li>
+                <li>95% fewer analyst rechecks</li>
+                <li>3× faster control sign-off</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Workflow Section -->
+    <section class="workflow-section" id="workflows" aria-label="How teams use Cybersim Pro">
+        <div class="workflow-header">
+            <h2 class="workflow-title">How Cybersim Pro runs your program</h2>
+            <p class="workflow-subtitle">Each workflow pairs guided content with automation so your executive sponsor sees time-to-value without extra headcount.</p>
+        </div>
+        <div class="workflow-grid">
+            <article class="workflow-card">
+                <h3>Purple team enablement</h3>
+                <p>Align red and blue teams with repeatable playbooks.</p>
+                <ul>
+                    <li>Guided adversary stories</li>
+                    <li>Command-chain wizard</li>
+                    <li>Facilitation kits for every run</li>
+                </ul>
+            </article>
+            <article class="workflow-card">
+                <h3>SOC readiness</h3>
+                <p>Rehearse escalations and close detection gaps inside the MCP sandbox.</p>
+                <ul>
+                    <li>Telemetry replay</li>
+                    <li>Auto control feed</li>
+                    <li>Coverage dashboards</li>
+                </ul>
+            </article>
+            <article class="workflow-card">
+                <h3>Resilience reporting</h3>
+                <p>Keep boards and regulators aligned without manual decks.</p>
+                <ul>
+                    <li>Live scenario scorecards</li>
+                    <li>Exportable exec briefings</li>
+                    <li>Benchmarking against peers</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <!-- Awards Section -->
+    <section class="awards-section">
+        <div class="awards-container">
+            <div class="awards-quote">
+                <p class="quote-text">"Since switching from our previous SCA tool, Cybersim Pro has cut the findings we send to analysts by 95%, which returned time to investigate real threats faster, and helped us remediate exploitable vulnerabilities quickly with precise reachability and clear upgrade guidance."</p>
+                <div class="quote-author">
+                    <div class="author-avatar">SS</div>
+                    <div class="author-info">
+                        <h4>Sarah Schmidt</h4>
+                        <p>Security Engineer, TechCorp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="awards-grid">
+                <div class="award-badge">🏆</div>
+                <div class="award-badge">⭐</div>
+                <div class="award-badge">🎖️</div>
+                <div class="award-badge">🥇</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Title -->
+    <section class="feature-title-section">
+        <h2 class="feature-main-title">Analyze <span class="highlight">every</span> line of code, <span class="highlight">every</span> dependency, on <span class="highlight">every</span> layer.</h2>
+    </section>
+
+    <!-- Visual Feature 1 -->
+    <section class="visual-section">
+        <div class="visual-container">
+            <div class="visual-text">
+                <h2>Code Scanning Built To Reduce Noise</h2>
+                <p>Cybersim Pro graphs how your application works across your code, open source dependencies, containers, and CI/CD workflows. That means your SCA, SAST, Secrets, and Container findings are clean, actionable, and in a single place.</p>
+            </div>
+            <div class="visual-diagram">
+                <div class="diagram-content">
+                    <div class="diagram-icon">📊</div>
+                    <div class="diagram-label">Code Analysis</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Feature 2 -->
+    <section class="visual-section">
+        <div class="visual-container" style="direction: rtl;">
+            <div class="visual-text" style="direction: ltr;">
+                <h2>Remediation That Actually Fixes Things</h2>
+                <p>Cybersim Pro uses program analysis to identify which vulnerabilities actually pose risk to your application, then offers multiple paths to fix them: see what would break in an upgrade with Upgrade Impact Analysis, or apply just the security fix without upgrading using Cybersim Patches.</p>
+            </div>
+            <div class="visual-diagram">
+                <div class="diagram-content">
+                    <div class="diagram-icon">🔧</div>
+                    <div class="diagram-label">Remediation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Feature 3 -->
+    <section class="visual-section">
+        <div class="visual-container">
+            <div class="visual-text">
+                <h2>AI in Dev, AI in AppSec — We've Got It Covered</h2>
+                <p>Cybersim Pro identifies risks in AI models and AI-generated code, tracks AI model provenance, and enforces proper governance. We also use AI to improve security team productivity - automatically analyzing thousands of pull requests to identify the handful with significant security implications.</p>
+            </div>
+            <div class="visual-diagram">
+                <div class="diagram-content">
+                    <div class="diagram-icon">🤖</div>
+                    <div class="diagram-label">AI Security</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visual Feature 4 -->
+    <section class="visual-section">
+        <div class="visual-container" style="direction: rtl;">
+            <div class="visual-text" style="direction: ltr;">
+                <h2>The Right Tools & APIs to Shift Left</h2>
+                <p>Cybersim Pro's API-first policy engine replaces noisy, generic security rules with precise policies tailored to your risks and workflows. By surfacing only meaningful, reachable issues and automating targeted actions, it drastically cuts unnecessary build breaks and security tickets.</p>
+            </div>
+            <div class="visual-diagram">
+                <div class="diagram-content">
+                    <div class="diagram-icon">⚙️</div>
+                    <div class="diagram-label">Policy Engine</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Governance & Compliance Section -->
+    <section class="governance-section" id="governance" aria-label="Governance and compliance validation">
+        <div class="governance-header">
+            <h2>Governance &amp; Compliance</h2>
+            <p>Dual-control approvals, sealed audit bundles, and evidence that maps cleanly to every major assurance framework.</p>
+        </div>
+        <div class="governance-logos">
+            <span class="governance-logo">SOC 2 Type II</span>
+            <span class="governance-logo">ISO 27001</span>
+            <span class="governance-logo">NIST CSF</span>
+            <span class="governance-logo">PCI DSS</span>
+            <span class="governance-logo">FedRAMP Ready</span>
+        </div>
+        <div class="governance-footer">
+            <a class="tertiary-link" href="mailto:compliance@cybersimpro.com?subject=Compliance%20Matrix%20Request" data-compliance-matrix>Download compliance matrix (PDF)</a>
+            <p class="governance-note">Audit seals ship with every scenario bundle so your compliance team can review controls on day one.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing" aria-label="Plans and pricing">
+        <div class="pricing-header">
+            <h2>Pricing &amp; Packaging</h2>
+            <p>Pick the bundle that matches your operating model. Every plan starts with a guided pilot so your stakeholders see value before procurement signs.</p>
+        </div>
+        <div class="pricing-grid">
+            <article class="pricing-card">
+                <h3>Growth</h3>
+                <p class="pricing-summary">Scenario library, essential reporting, email support.</p>
+                <ul>
+                    <li>Up to 10 named analysts</li>
+                    <li>Core MCP integrations</li>
+                    <li>Weekly enablement office hours</li>
+                </ul>
+                <div class="pricing-actions">
+                    <a class="primary-btn" href="#contact">Talk to Sales</a>
+                    <button class="ghost-btn" type="button" data-checkout-url="__STRIPE_CHECKOUT_URL__" data-plan="growth">Start 30-day pilot</button>
+                    <a class="tertiary-link" href="#contact" data-pricing-sheet>Download pricing sheet</a>
+                </div>
+            </article>
+            <article class="pricing-card">
+                <h3>Enterprise</h3>
+                <p class="pricing-summary">SSO/SCIM, audit seals, telemetry replay, dedicated TAM.</p>
+                <ul>
+                    <li>Unlimited workspaces</li>
+                    <li>Premium data lake sync</li>
+                    <li>Quarterly executive briefings</li>
+                    <li>Enhanced purple/blue facilitation kit</li>
+                </ul>
+                <div class="pricing-actions">
+                    <a class="primary-btn" href="#contact">Talk to Sales</a>
+                    <button class="ghost-btn" type="button" data-checkout-url="__STRIPE_CHECKOUT_URL__" data-plan="enterprise">Start 30-day pilot</button>
+                    <a class="tertiary-link" href="#contact" data-pricing-sheet>Download pricing sheet</a>
+                </div>
+            </article>
+            <article class="pricing-card">
+                <h3>Regulated</h3>
+                <p class="pricing-summary">On-prem or VPC, custom retention, regulator bundle automation.</p>
+                <ul>
+                    <li>Hardened deployment runbooks</li>
+                    <li>Dedicated compliance concierge</li>
+                    <li>Signed regulator-ready reports</li>
+                    <li>Bespoke DPA + supply chain attestations</li>
+                </ul>
+                <div class="pricing-actions">
+                    <a class="primary-btn" href="#contact">Talk to Sales</a>
+                    <button class="ghost-btn" type="button" data-checkout-url="__STRIPE_CHECKOUT_URL__" data-plan="regulated">Start 30-day pilot</button>
+                    <a class="tertiary-link" href="#contact" data-pricing-sheet>Download pricing sheet</a>
+                </div>
+            </article>
+        </div>
+        <div class="pricing-footer">
+            <p class="pricing-label">Secure Stripe checkout (coming soon)</p>
+            <div class="pricing-faq">
+                <h3>How do I purchase?</h3>
+                <p>Schedule a demo; we provision a pilot in your environment and finalize billing via Stripe or invoice after approval.</p>
+            </div>
+            <details class="pricing-faq-item">
+                <summary>What integrations ship with each plan?</summary>
+                <p>Growth covers GitHub, GitLab, Jira, and ServiceNow. Enterprise unlocks SIEM/SOAR bridges plus telemetry replay. Regulated adds GRC exports, regulator automation, and self-hosted agent bundles.</p>
+            </details>
+            <details class="pricing-faq-item">
+                <summary>How does onboarding work?</summary>
+                <p>Every package starts with a guided readiness week: pilot configuration, sample scenario launch, and compliance alignment. Regulated customers also receive architecture and legal reviews before go-live.</p>
+            </details>
+            <details class="pricing-faq-item">
+                <summary>Can I run CyberSim Pro in my own cloud?</summary>
+                <p>Yes. Enterprise offers dedicated VPC tenancy, while Regulated includes hardened runbooks for AWS, Azure, GovCloud, and optional air-gapped deployments.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="testimonials-container">
+            <h2 class="testimonials-title">Don't take our word for it</h2>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"With Cybersim Pro we know where to focus, while other tools tell us to focus everywhere. We're feeding three birds with one scone. Cybersim Pro makes us more productive by telling us where to focus, it improves our security posture, and it's meeting us where we work."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AK</div>
+                        <div class="author-info">
+                            <h4>Andrey Kolesnikov</h4>
+                            <p>CEO, MileIQ</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Cybersim Pro represents the next major innovation in application security. We believe that the reachability analysis provided by Cybersim Pro will be a must-have technology for enterprises, focusing developers' efforts on only the most critical and reachable vulnerabilities."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MC</div>
+                        <div class="author-info">
+                            <h4>Matt Carbonara</h4>
+                            <p>Head of Enterprise Tech Investing at Citi Ventures</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Integrating Cybersim Pro into our Azure DevOps pipeline has saved us thousands of developer hours. We're able to quickly pinpoint and fix reachable and exploitable vulnerabilities without wasting time chasing false positives."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AN</div>
+                        <div class="author-info">
+                            <h4>Azeem Nizam</h4>
+                            <p>CISO, ABC Fitness</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The best investment we've made in security training. Our team's ability to detect and respond to advanced persistent threats has improved dramatically since implementing Cybersim Pro's adaptive adversary scenarios."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DT</div>
+                        <div class="author-info">
+                            <h4>David Tsao</h4>
+                            <p>CISO, Instacart</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Cybersim Pro has left me with the impression that they will do what it takes to keep our customers informed. For software composition and reachability analysis, it is a truly competing product in the current market."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DS</div>
+                        <div class="author-info">
+                            <h4>DevSecOps Engineer</h4>
+                            <p>G2 Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"The realistic attack simulations and forensics modules mirror actual incident investigations perfectly. This platform has transformed how we train our security operations center analysts."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">GP</div>
+                        <div class="author-info">
+                            <h4>Greg Pettengill</h4>
+                            <p>Principal Security Engineer at Five9</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Highlight -->
+    <section class="case-study" aria-label="Featured customer story">
+        <div class="case-study-inner">
+            <div class="case-study-copy">
+                <h2>Case study: Fintech incident readiness</h2>
+                <p>Within 30 days a payments provider orchestrated purple-team drills across engineering, fraud, and legal—cutting tabletop preparation from four weeks to four days while generating regulator-ready evidence bundles.</p>
+                <ul>
+                    <li>95% reduction in false-positive escalations</li>
+                    <li>Board reporting packaged in under 48 hours</li>
+                    <li>Collaborative playbooks for PCI and SOC 2 audits</li>
+                </ul>
+                <div class="case-study-cta">
+                    <a class="primary-btn" href="assets/docs/cybersim-product-onepager.pdf" download>Download one-pager</a>
+                    <a class="ghost-btn" href="#contact">Request full case study</a>
+                </div>
+            </div>
+            <div class="case-study-meta">
+                <div class="case-metric">
+                    <span class="case-value">4x</span>
+                    <span class="case-label">Faster regulator briefings</span>
+                </div>
+                <div class="case-metric">
+                    <span class="case-value">3</span>
+                    <span class="case-label">Matured workflows (Purple, SOC, Governance)</span>
+                </div>
+                <div class="case-quote">
+                    “We can spin up MCP scenarios for executives and auditors without waiting on ops—CyberSim Pro finally aligned compliance, engineering, and response.”
+                    <span>VP Security Engineering, Fintech Series D</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="roi-strip" aria-label="Value metrics">
+        <div class="roi-item">
+            <span class="roi-value">95%</span>
+            <span class="roi-label">Fewer false positives reaching analysts</span>
+        </div>
+        <div class="roi-item">
+            <span class="roi-value">4×</span>
+            <span class="roi-label">Faster regulator evidence turnaround</span>
+        </div>
+        <div class="roi-item">
+            <span class="roi-value">80%</span>
+            <span class="roi-label">High-risk technique coverage in 30 days</span>
+        </div>
+        <div class="roi-item">
+            <span class="roi-value">50%</span>
+            <span class="roi-label">Less time validating detections</span>
+        </div>
+    </section>
+
+    <!-- Learn More Section -->
+    <section class="learn-section" id="learn">
+        <h2 class="learn-title">Learn more</h2>
+        <div class="learn-grid">
+            <div class="learn-card">
+                <div class="learn-card-image">
+                    💀
+                </div>
+                <div class="learn-card-content">
+                    <div class="learn-card-label">Solution Brief</div>
+                    <h3>Proactive Protection from Malware Attacks</h3>
+                </div>
+            </div>
+
+            <div class="learn-card">
+                <div class="learn-card-image" style="background: linear-gradient(135deg, #10b981 0%, #059669 100%);">
+                    🔒
+                </div>
+                <div class="learn-card-content">
+                    <div class="learn-card-label">Blog</div>
+                    <h3>Why Cooldown Windows Belong in Every npm Security Strategy</h3>
+                </div>
+            </div>
+
+            <div class="learn-card">
+                <div class="learn-card-image" style="background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);">
+                    ✓
+                </div>
+                <div class="learn-card-content">
+                    <div class="learn-card-label">Blog</div>
+                    <h3>Zero Trust for Open Source: Why Enterprises Need a New AppSec Playbook</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="learn-section" style="padding-top: 4rem;">
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: #10b981; margin-bottom: 2rem;">LEANAPPSEC</div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 2rem; line-height: 1.3;">Uplevel app security skills and connect with like-minded people</h2>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" aria-label="Talk to Cybersim Pro">
+        <div class="contact-header">
+            <h2>Kick off your pilot + strategy session</h2>
+            <p>Share a work email and we’ll launch a sample scenario, route you to the right specialist, and send the pricing sheet.</p>
+        </div>
+        <form class="contact-form" aria-label="Request a demo" data-lead-form>
+            <label for="contact-name" class="contact-label">Full name</label>
+            <input id="contact-name" name="name" type="text" placeholder="Alex Morgan" required>
+
+            <label for="contact-email" class="contact-label">Work email</label>
+            <input id="contact-email" name="email" type="email" placeholder="name@company.com" required data-demo-email>
+
+            <label for="contact-company" class="contact-label">Company</label>
+            <input id="contact-company" name="company" type="text" placeholder="Acme Financial" required>
+
+            <label for="contact-timeline" class="contact-label">Timeline</label>
+            <select id="contact-timeline" name="timeline" class="contact-select" required>
+                <option value="" disabled selected>Select timeline</option>
+                <option value="0-30">0–30 days</option>
+                <option value="30-90">30–90 days</option>
+                <option value="gt-90">More than 90 days</option>
+                <option value="research">Just researching</option>
+            </select>
+
+            <label for="contact-notes" class="contact-label">What should we prepare?</label>
+            <textarea name="notes" id="contact-notes" rows="4" placeholder="Share stack details, compliance goals, or team size." class="contact-notes"></textarea>
+
+            <input type="hidden" name="source" value="cybersimpro-front" data-lead-source>
+            <input type="text" name="website" class="contact-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="contact-actions">
+                <button class="primary-btn" type="submit">Share details with sales</button>
+                <a class="ghost-btn" href="assets/docs/cybersim-pricing-sheet.pdf" download data-pricing-sheet>Download pricing sheet</a>
+                <button class="cta-outline" type="button" data-demo-trigger>Launch self-guided trial</button>
+                <a class="ghost-btn ghost-btn--schedule" href="https://calendly.com/cybersimpro/demo" target="_blank" rel="noopener" data-calendly-link>Schedule via Calendly</a>
+            </div>
+            <p class="contact-hint" data-lead-result>Launching a trial generates a tailored MCP scenario and alerts your account team.</p>
+        </form>
+        <div class="contact-subtext">
+            <p>Prefer to talk now? Call +1 (415) 555-0145 and ask for the Cybersim Pro readiness desk.</p>
+        </div>
+    </section>
+
+    <!-- Support Resources -->
+    <section class="support-resources" id="support" aria-label="Support assets and downloads">
+        <div class="support-heading">
+            <h2>Resources for your evaluation</h2>
+            <p>Share these links with security leadership, compliance partners, and procurement.</p>
+        </div>
+        <div class="support-grid">
+            <article class="support-card">
+                <h3>Documentation</h3>
+                <ul>
+                    <li><a href="./docs/SETUP_GUIDE.md" target="_blank" rel="noopener">MCP setup guide</a></li>
+                    <li><a href="https://github.com/kayembahamid/cybersim-pro/tree/main/docs" target="_blank" rel="noopener">Architecture &amp; policy docs</a></li>
+                    <li><a href="./docs/COMPLIANCE_ROADMAP.md" target="_blank" rel="noopener">Compliance roadmap</a></li>
+                </ul>
+            </article>
+            <article class="support-card">
+                <h3>Downloads</h3>
+                <ul>
+                    <li><a href="assets/docs/cybersim-compliance-matrix.pdf" download>Compliance matrix (PDF)</a></li>
+                    <li><a href="assets/docs/cybersim-pricing-sheet.pdf" download>Pricing sheet (PDF)</a></li>
+                    <li><a href="assets/docs/cybersim-product-onepager.pdf" download>Product one-pager (PDF)</a></li>
+                </ul>
+            </article>
+            <article class="support-card">
+                <h3>Need something custom?</h3>
+                <p>Email <a href="mailto:support@cybersimpro.com">support@cybersimpro.com</a> for security questionnaires, DPA templates, or custom deployment advice.</p>
+                <p>Join the <a href="https://github.com/kayembahamid/cybersim-pro/discussions" target="_blank" rel="noopener">community forum</a> for roadmap previews and peer templates.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-logo">CYBERSIM PRO</div>
+            <div class="footer-social">
+                <a href="#twitter">𝕏</a>
+                <a href="#linkedin">in</a>
+                <a href="#youtube">▶</a>
+                <a href="#rss">☰</a>
+            </div>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-section">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <h4 style="margin-top: 2rem;">COMPANY</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+                <div style="margin-top: 2rem;">
+                    <a href="#login" class="login-btn">👤 Login</a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>LEARN</h4>
+                <ul>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#docs">Documentation</a></li>
+                    <li><a href="#ebooks">eBook / Reports</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#learnappsec">LeanAppSec</a></li>
+                    <li><a href="#solution">Solution Brief</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>TOOLS</h4>
+                <ul>
+                    <li><a href="#calculator">TEI Calculator</a></li>
+                    <li><a href="#explorer">Risk Explorer</a></li>
+                </ul>
+                <h4 style="margin-top: 2rem;">WHY US?</h4>
+                <ul>
+                    <li><a href="#snyk">vs. Snyk</a></li>
+                    <li><a href="#traditional">vs. Traditional SCA</a></li>
+                    <li><a href="#runtime">vs. Runtime SCA</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Product</h4>
+                <div style="margin-top: 2rem;">
+                    <h4>PRODUCTS</h4>
+                    <ul>
+                        <li><a href="#supply-chain">Cybersim Pro Supply Chain</a></li>
+                        <li><a href="#open-source">Cybersim Open Source</a></li>
+                        <li><a href="#secrets">Cybersim Secrets</a></li>
+                        <li><a href="#code-security">Cybersim Code Security</a></li>
+                        <li><a href="#dependencies">Cybersim Dependencies</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h4>USE CASES</h4>
+                <ul>
+                    <li><a href="#malware">Malware Package Detection</a></li>
+                    <li><a href="#code-scanning">Code Scanning</a></li>
+                    <li><a href="#secrets-detection">Secrets Detection</a></li>
+                    <li><a href="#reachability">Reachability Analysis</a></li>
+                    <li><a href="#oss-governance">OSS Governance</a></li>
+                    <li><a href="#cicd">CI/CD Security</a></li>
+                    <li><a href="#sbom">SBOM</a></li>
+                    <li><a href="#api">API</a></li>
+                    <li><a href="#cursor">Cursor</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cybersim Pro. All rights reserved.</p>
+            <div class="footer-legal">
+                <a href="docs/legal/privacy-policy.md" target="_blank" rel="noopener">Privacy Policy</a>
+                <a href="docs/legal/terms-of-service.md" target="_blank" rel="noopener">Terms of Service</a>
+                <a href="docs/legal/acceptable-use-policy.md" target="_blank" rel="noopener">Acceptable Use</a>
+                <a href="docs/legal/cookie-statement.md" target="_blank" rel="noopener">Cookie Statement</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consent banner -->
+    <aside class="consent-banner" data-consent-banner hidden>
+        <div class="consent-content">
+            <p>We use cookies to capture product interest analytics. Accept to enable Segment/GTM tracking, or decline to keep analytics off.</p>
+            <div class="consent-actions">
+                <button type="button" class="primary-btn" data-consent-accept>Accept</button>
+                <button type="button" class="ghost-btn" data-consent-decline>Decline</button>
+                <a class="secondary-link" href="#support">Privacy &amp; docs</a>
+            </div>
+        </div>
+    </aside>
+
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
